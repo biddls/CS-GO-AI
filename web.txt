@@ -1,0 +1,4 @@
+things i used
+https://python-mss.readthedocs.io/
+https://github.com/Microsoft/VoTT/releases
+https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/single-shot-detectors.html

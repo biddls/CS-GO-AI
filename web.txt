@@ -1,4 +1,4 @@
 things i used
 https://python-mss.readthedocs.io/
 https://github.com/Microsoft/VoTT/releases
-https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/single-shot-detectors.html
+https://www.analyticsvidhya.com/blog/2018/12/practical-guide-object-detection-yolo-framewor-python/

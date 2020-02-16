@@ -7,7 +7,7 @@ from time import sleep
 sleep(4)
 s = datetime.now()
 
-n= 100
+n = 100
 for x in range(n):
     with mss() as sct:
         pic = np.array(sct.grab(sct.monitors[1]))

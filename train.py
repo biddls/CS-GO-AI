@@ -34,10 +34,6 @@ for index, iter in enumerate(images):
     #plt.imshow(images[index])
     #plt.show()
 
-print(len(images),'len')
-print(images.shape,'shape')
-
-
 print(images[len(images)-1]#image no. 0 to len -1
       [1079]#row 0-1079
       [1919]#column 0-1919
@@ -48,4 +44,18 @@ print(images[0]#image no. 0 to len -1
       [0]#column 0-1919
       [0])#rgb 0-2
 
-print(type(images))
+##turns the CSV numers into YOLO format
+
+data = data.tolist()
+
+b = []
+
+print('xmin,ymin,xmax,ymax,label')
+print(data[0])
+
+for x in data:
+    b.extend([[int(x[4]), int((x[0]+x[2])/2), int((x[1]+x[3])/2), int((x[2] - x[0])/2), int((x[3] - x[1])/2)]])
+
+print('label\tXcenter\tYcenter\tWidthfromC\tHightfromC\t')
+for b in b[0:3]:
+    print(b)

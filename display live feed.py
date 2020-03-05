@@ -14,17 +14,17 @@ def show_live_feed(show_fps, region=None):
         if show_fps == True:
             start = time.time()
 
-        img = grab_screen(region=(0, 0, 960 ,720))
-        cv2.imshow('window',cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+        img = grab_screen(region=(1, 26, 800 ,625))
+        cv2.imshow('window',cv2.cvtColor(img, cv2.COLOR_BGR2GRAY))
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
         if show_fps == True:
             fps.append(1 / (time.time() - start))
             try:
-                print(mean(fps[60:]))
+                print(round(mean(fps[60:])),'FPS')
             except:
-                print(mean(fps))
+                print(round(mean(fps)),'FPS')
 
 if __name__ == '__main__':
     show_live_feed(True)

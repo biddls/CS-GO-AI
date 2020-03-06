@@ -1,7 +1,6 @@
 import numpy as np
 import os
-import time
-start = time.time()
+
 file_name = 'training_data.npy'
 
 if os.path.isfile(file_name):
@@ -46,4 +45,4 @@ for img in data:
             temp[x,y] = np.array(boxy)
     img = temp
 
-print('it took: ', time.time()-start, 'seconds')
+#runs at 1.5 miliseconds

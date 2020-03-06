@@ -1,9 +1,7 @@
 import numpy as np
-#np.set_printoptions(threshold=np.inf)
 import os
-import cv2
-from time import sleep
-
+import time
+start = time.time()
 file_name = 'training_data.npy'
 
 if os.path.isfile(file_name):
@@ -18,12 +16,6 @@ data = []
 
 for x in training_data:
     for y in x:
-        #print(y.shape)
-        #cv2.imshow('window', cv2.cvtColor(y, cv2.COLOR_GRAY2RGB))
-        #sleep(0.1)
-        #if cv2.waitKey(1) & 0xFF == ord('q'):
-        #    break
-        imgsu = []
         divsize = 100
         rowcount = y.shape[0]
         colcount = y.shape[1]
@@ -53,3 +45,5 @@ for img in data:
             boxy = np.append(arr = boxx, values = boxy, axis = 0)
             temp[x,y] = np.array(boxy)
     img = temp
+
+print('it took: ', time.time()-start, 'seconds')

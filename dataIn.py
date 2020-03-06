@@ -1,15 +1,16 @@
 import numpy as np
 import os
+import cv2
 
 file_name = 'training_data.npy'
 
-if os.path.isfile(file_name):
-    print('File exists, loading previous data!')
-    training_data = list(np.load(file_name))
+training_data = list(np.load(file_name))
 
-else:
-    print('File does not exist')
-    exit()
+#turns into images to lable
+#for index, img in enumerate(training_data):
+#    cv2.imwrite('images\{}.jpg'.format(index), cv2.cvtColor(img[0], cv2.COLOR_GRAY2RGB))
+
+
 temp = training_data
 data = []
 

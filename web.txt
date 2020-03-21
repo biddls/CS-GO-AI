@@ -4,3 +4,9 @@ https://github.com/Microsoft/VoTT/releases
 https://www.analyticsvidhya.com/blog/2018/12/practical-guide-object-detection-yolo-framewor-python/
 https://github.com/Sentdex/pygta5
 labelImg.py #to run image labeling
+
+modukes:
+numpy
+tensroflow
+cv2
+pywin32

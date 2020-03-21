@@ -98,6 +98,13 @@ divpoint  = int(0.8 * len(imagesall))
 feattrain, feattest = imagesall[:divpoint], imagesall[divpoint:]
 lbltrain, lbltest = lines[:divpoint], lines[divpoint:]
 
+savepath = "C:\\Users\\thoma\\OneDrive\\Documents\\PycharmProjects\\CS-GO-AI\\data\\AI\\"
+
+np.save(savepath + 'FeatureTrain', feattrain)
+np.save(savepath + 'FeatureTest', feattest)
+np.save(savepath + 'LableTrain', lbltrain)
+np.save(savepath + 'LabelTest', lbltest)
+
 print(feattrain,'\n\n', lbltrain)
 print('\n############\n')
 print(feattest,'\n\n', lbltest)

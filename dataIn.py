@@ -2,6 +2,9 @@ import numpy as np
 import os
 import cv2
 
+labels = {'T': 0,
+         'CT':1}
+
 file_name = 'training_data.npy'
 
 training_data = list(np.load(file_name))
@@ -10,9 +13,13 @@ training_data = list(np.load(file_name))
 #for index, img in enumerate(training_data):
 #    cv2.imwrite('images\{}.jpg'.format(index), cv2.cvtColor(img[0], cv2.COLOR_GRAY2RGB))
 
+os.chdir("dat saved/vott-csv-export")
+file = glob.glob("*.csv")
 
 temp = training_data
 data = []
+
+#split images into 100X100 squares
 
 for x in training_data:
     for y in x:
@@ -36,6 +43,7 @@ data = np.array(data)
 
 training_data = []
 
+#does data aranging
 for img in data:
     temp = np.empty([int(img.shape[0]-1), int(img.shape[1])-1], dtype=object)
     for y in range(0,8-1):

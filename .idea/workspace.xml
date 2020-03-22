@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0936a858-7ac2-4f4d-a030-7a685df016ff" name="Default Changelist" comment="">
+    <list default="true" id="0936a858-7ac2-4f4d-a030-7a685df016ff" name="Default Changelist" comment="start work on ai">
       <change beforePath="$PROJECT_DIR$/.idea/CS GO AI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CS GO AI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagetotrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/imagetotrain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web.txt" beforeDir="false" afterPath="$PROJECT_DIR$/web.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.imagetotrain">
     <configuration name="covertimtotrain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CS GO AI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,8 +165,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.train" />
         <item itemvalue="Python.imagetotrain" />
+        <item itemvalue="Python.train" />
         <item itemvalue="Python.covertimtotrain" />
         <item itemvalue="Python.dataIn" />
         <item itemvalue="Python.display live feed" />
@@ -360,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584798740339</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="start work on ai">
+      <created>1584813025691</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1584813025691</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -386,6 +392,7 @@
     <MESSAGE value="re wrote to be faster &amp; more flexible" />
     <MESSAGE value="." />
     <MESSAGE value="greatly imporved image pre prosessing" />
-    <option name="LAST_COMMIT_MESSAGE" value="greatly imporved image pre prosessing" />
+    <MESSAGE value="start work on ai" />
+    <option name="LAST_COMMIT_MESSAGE" value="start work on ai" />
   </component>
 </project>

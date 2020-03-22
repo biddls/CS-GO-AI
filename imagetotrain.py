@@ -56,7 +56,7 @@ for image in images:
         line.pop()
 
         while len(line) < 9:
-            line.append([0, 0, 0, 0, 0])
+            line.append([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 
         line = np.array(line).flatten('C')
         lines.append(line)
